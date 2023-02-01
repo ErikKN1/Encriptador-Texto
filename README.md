@@ -31,7 +31,7 @@ Por ejemplo:
 
 <h2>:floppy_disk: **Tecnologias usadas** :floppy_disk:</h2>
 
-*HTML5
-*CSS3
-*Javascript
-*Libreria SweetAlert2
+* HTML5
+* CSS3
+* Javascript
+* Libreria SweetAlert2
