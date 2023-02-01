@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="shortcut icon" href="assets/img/KeyChainAccess_22693.png" type="image/x-icon">
+    
+    <link href="assets/SweetAlert/sweetalert2.min.css"stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="assets/img/Logov.png" alt="Logo-alura" >
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <section class="encriptar" >  
+            <textarea name="introducir-texto" id="introducir-texto" class="introducir-texto" cols="30" rows="10" type="mensaje" placeholder="Ingrese texto a encriptar aqui" ></textarea>
+            <div class="terminos">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <a href="#encriptado"><button id="btn-encriptar" class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button></a>
+                <!-- <button id="btn-encriptar" class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button> -->
+                
+                <a href="#encriptado"><button id="btn-desencriptar" class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button></a>
+                <!-- <button id="btn-desencriptar" class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button> -->
+                
+            </div>
+
+        </section>
+        <section class="encriptado" id="encriptado">
+            <div id="container-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div class="container-imagen" id="container-imagen">
+                <img src="assets/img/Muñeco.svg" alt="imagen-muñeco" >
+                <p class="texto1">Ningun mensaje fue encontrado</p>
+                <p class="texto2" >Ingresa texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea name="resultado" id="resultado" cols="30" rows="10" readonly></textarea>
+            <button id="btn-copy" class="btn-copy" onclick="copiarPortapapeles()" >Copiar</button>
+        </section>
+
+    </main>
+    <footer>Desarrollado por Erik HG
+        <a href="https://www.linkedin.com/in/erik-hernandez-ehdw" class="redes"><img src="assets/img/linkedin.png" alt=""></a>
+        <a href="https://github.com/ErikKN1" class="redes"><img src="assets/img/github.png" alt=""></a>
+    </footer>
+    
+</body>
+
+<script src="assets/JS/script.js"></script>
+<script src="assets/SweetAlert/sweetalert2.all.min.js"></script>
+</html>
